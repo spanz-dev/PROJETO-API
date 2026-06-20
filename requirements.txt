@@ -7,5 +7,5 @@ dotenv
 streamlit_option_menu
 pydantic
 passlib
-psycopg2
+psycopg2-binary
 email-validator
