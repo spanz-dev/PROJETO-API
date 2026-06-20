@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-from app.config.database import engine, Base, SessionLocal  # Importamos o 'engine' e 'Base'
-from app.models.item_model import Usuarios  # Importante: mantém o modelo carregado para o Base saber que ele existe
+from app.config.database import engine, SessionLocal 
+from app.models.item_model import Usuarios, Base  # <-- IMPORTANTE: Importe o Base diretamente daqui!
 from app.services.auth import gerar_hash, verificar_senha
 from app.schemas.user_schema import UsuarioRegistro, UsuarioLogin
 
-# 1. ESTA LINHA CRIA AS TABELAS NO NEON SE ELAS NÃO EXISTIREM
+# Garante que o SQLAlchemy conhece os modelos atrelados a este Base específico antes de criar
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
