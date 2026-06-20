@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException
-from config.database import SessionLocal
-from models.item_model import Usuarios
-from services.auth import gerar_hash
-from services.auth import verificar_senha
-from schemas.user_schema import UsuarioRegistro, UsuarioLogin
+from app.config.database import SessionLocal
+from app.models.item_model import Usuarios
+from app.services.auth import gerar_hash
+from app.services.auth import verificar_senha
+from app.schemas.user_schema import UsuarioRegistro, UsuarioLogin
 
 app = FastAPI()
 
