@@ -1,0 +1,9 @@
+streamlit
+fastapi
+sqlalchemy
+os
+requests
+dotenv
+streamlit_option_menu
+pydantic
+passlib
