@@ -6,6 +6,6 @@ requests
 dotenv
 streamlit_option_menu
 pydantic
-passlib
+passlib[bcrypt]
 psycopg2-binary
 email-validator
