@@ -1,4 +1,4 @@
---upgrade
+
 streamlit
 fastapi
 sqlalchemy
