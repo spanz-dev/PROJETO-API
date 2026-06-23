@@ -59,19 +59,19 @@ with st.sidebar:
 if st.session_state.logado:
     pagina = option_menu(
         menu_title=None,
-        options=["Home", "Dashboard", "Usuários", "Configurações"],
-        icons=["house", "bar-chart", "people", "gear"],
+        options=["🏠Home", "🔎Pesquisar", "🙍‍♂️Usuários", "⚙️Configurações"],
         orientation="horizontal",
     )
 
-    if pagina == "Home":
-        st.title("Home")
+    if pagina == "🏠Home":
+        pass
 
-    elif pagina == "Dashboard":
-        st.title("Dashboard")
+    elif pagina == "🔎Pesquisar":
+        pass
 
-    elif pagina == "Usuários":
-        st.title("Usuários")
 
-    elif pagina == "Configurações":
-        st.title("Configurações")
+    elif pagina == "🙍‍♂️Usuários":
+        pass
+
+    elif pagina == "⚙️Configurações":
+        pass
