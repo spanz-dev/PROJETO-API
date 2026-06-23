@@ -68,3 +68,6 @@ def login(usuario: UsuarioLogin, db: Session = Depends(get_db)): # Usando o Depe
         "mensagem": "Login realizado",
         "usuario": usuario_db.nome
     }
+@app.get("/usuarios")
+def listar_usuarios(db: Session = Depends(get_db)):
+    return db.query(Usuarios).all()
